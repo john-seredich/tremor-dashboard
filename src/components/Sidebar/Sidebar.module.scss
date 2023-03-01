@@ -1,0 +1,70 @@
+.sidebar {
+  width: 275px;
+  max-width: 275px;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+
+  h2 {
+    margin: 0rem;
+    padding: 1rem 2rem;
+  }
+
+  &__container {
+    padding: 1rem 2rem;
+  }
+
+  &__item {
+    margin-bottom: 2rem;
+    h3 {
+      font-size: 1rem;
+
+      margin: 0rem;
+      color: #3f4951;
+    }
+
+    &__links {
+      margin-top: 0.5rem;
+      display: flex;
+      flex-direction: column;
+
+      a {
+        padding: 0.75rem 1rem;
+        border-radius: 0.5rem;
+        display: flex;
+        align-items: center;
+        margin: 0.1rem 0rem;
+        text-decoration: none;
+        font-weight: 600;
+        color: #4e4f53;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background-color: #3b82f6;
+          color: white;
+        }
+
+        svg {
+          font-size: 1.25rem;
+        }
+
+        span {
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+}
+
+.active {
+  background-color: #3b82f6;
+
+  svg {
+    color: white;
+  }
+
+  span {
+    color: white;
+  }
+}
