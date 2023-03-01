@@ -6,9 +6,38 @@
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    button {
+      border: none;
+      background-color: transparent;
+    }
+
+    svg {
+      margin-right: 2rem;
+      font-size: 1.25rem;
+      cursor: pointer;
+
+      &:hover {
+        color: #3b82f6;
+      }
+    }
+  }
+
   h2 {
     margin: 0rem;
     padding: 1rem 2rem;
+    color: #2c2c2c;
+    letter-spacing: 0.05rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+      color: #3b82f6;
+    }
   }
 
   &__container {
@@ -19,6 +48,7 @@
     margin-bottom: 2rem;
     h3 {
       font-size: 1rem;
+      font-weight: 600;
 
       margin: 0rem;
       color: #3f4951;

@@ -1,7 +1,10 @@
 import styles from "./Sidebar.module.scss";
 import { links } from "../../data/links";
+import { AiOutlineMenu } from "react-icons/ai";
 
 function Sidebar() {
+  const activeItem = "Dashboard";
+
   const linksElement = links.map((link, i) => {
     return (
       <div className={styles.sidebar__item} key={i}>
@@ -12,7 +15,11 @@ function Sidebar() {
         <div className={styles.sidebar__item__links}>
           {link.links.map((linkItems, i) => {
             return (
-              <a href="/" key={i}>
+              <a
+                href="/"
+                key={i}
+                className={activeItem === linkItems.name ? styles.active : ""}
+              >
                 {linkItems.icon} <span>{linkItems.name}</span>
               </a>
             );
@@ -24,7 +31,12 @@ function Sidebar() {
 
   return (
     <div className={styles.sidebar}>
-      <h2>Admin</h2>
+      <div className={styles.sidebar__header}>
+        <h2>BITUMEN</h2>
+        <button type="button">
+          <AiOutlineMenu />
+        </button>
+      </div>
       <div className={styles.sidebar__container}>{linksElement}</div>
     </div>
   );
