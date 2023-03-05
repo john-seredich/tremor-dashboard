@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/tremor-dashboard/static/css/main.edc0fd8d.css",
+    "main.js": "/tremor-dashboard/static/js/main.2809a32b.js",
+    "static/js/787.3e4bd318.chunk.js": "/tremor-dashboard/static/js/787.3e4bd318.chunk.js",
+    "static/media/avatar2.jpg": "/tremor-dashboard/static/media/avatar2.40d668f58c650e364281.jpg",
+    "static/media/avatar.jpg": "/tremor-dashboard/static/media/avatar.f56b774f77caaf2f6921.jpg",
+    "index.html": "/tremor-dashboard/index.html",
+    "main.edc0fd8d.css.map": "/tremor-dashboard/static/css/main.edc0fd8d.css.map",
+    "main.2809a32b.js.map": "/tremor-dashboard/static/js/main.2809a32b.js.map",
+    "787.3e4bd318.chunk.js.map": "/tremor-dashboard/static/js/787.3e4bd318.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.edc0fd8d.css",
+    "static/js/main.2809a32b.js"
+  ]
+}
