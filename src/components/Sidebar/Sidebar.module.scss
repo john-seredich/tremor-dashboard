@@ -111,9 +111,16 @@
 
 // open menu
 .sidebar_open {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   width: 275px;
   max-width: 275px;
-  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
   background-color: rgb(255, 255, 255);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
