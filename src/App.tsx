@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar/Navbar";
 import styles from "./App.module.scss";
 
 function App() {
-  const [activeMenu, setActiveMenu] = useState(true);
+  const [activeMenu, setActiveMenu] = useState(false);
 
   return (
     <div className={styles.app}>
