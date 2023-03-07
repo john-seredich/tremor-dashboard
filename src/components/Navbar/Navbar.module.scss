@@ -56,6 +56,10 @@
       &_container {
         flex-direction: row;
       }
+
+      &_svg {
+        transform: rotate(90deg);
+      }
     }
   }
 }

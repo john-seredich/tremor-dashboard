@@ -20,7 +20,11 @@ function Navbar() {
           type="button"
           onClick={() => setMenuToggle((prevToggle) => !prevToggle)}
         >
-          {menuToggle ? <MdArrowDropUp /> : <MdArrowDropDown />}
+          {menuToggle ? (
+            <MdArrowDropUp className={styles.navbar__icons_svg} />
+          ) : (
+            <MdArrowDropDown className={styles.navbar__icons_svg} />
+          )}
         </button>
         {menuToggle && (
           <div className={styles.navbar__icons_container}>
