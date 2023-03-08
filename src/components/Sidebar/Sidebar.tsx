@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import styles from "./Sidebar.module.scss";
 import { links } from "../../data/links";
 import { AiOutlineMenu } from "react-icons/ai";
@@ -8,6 +9,19 @@ type Props = {
 };
 
 function Sidebar({ activeMenu, setActiveMenu }: Props) {
+  const calcViewportUnits = () => {
+    const vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty("--vh", vh + "px");
+  };
+
+  useEffect(() => {
+    const handleResize = () => calcViewportUnits();
+    window.addEventListener("resize", handleResize);
+
+    handleResize();
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const activeItem = "Dashboard";
   const dynamicStyle = `${styles.sidebar} ${activeMenu}`;
   console.log(dynamicStyle);
@@ -48,28 +62,30 @@ function Sidebar({ activeMenu, setActiveMenu }: Props) {
   });
 
   return (
-    <div className={activeMenu ? styles.sidebar_open : styles.sidebar}>
-      <div
-        className={
-          activeMenu ? styles.sidebar_open__header : styles.sidebar__header
-        }
-      >
-        <h2>BITUMEN</h2>
-        <button
-          type="button"
-          onClick={() => setActiveMenu((prevState) => !prevState)}
+    <div className={styles.container}>
+      <div className={activeMenu ? styles.sidebar_open : styles.sidebar}>
+        <div
+          className={
+            activeMenu ? styles.sidebar_open__header : styles.sidebar__header
+          }
         >
-          <AiOutlineMenu />
-        </button>
-      </div>
-      <div
-        className={
-          activeMenu
-            ? styles.sidebar_open__container
-            : styles.sidebar__container
-        }
-      >
-        {linksElement}
+          <h2>BITUMEN</h2>
+          <button
+            type="button"
+            onClick={() => setActiveMenu((prevState) => !prevState)}
+          >
+            <AiOutlineMenu />
+          </button>
+        </div>
+        <div
+          className={
+            activeMenu
+              ? styles.sidebar_open__container
+              : styles.sidebar__container
+          }
+        >
+          {linksElement}
+        </div>
       </div>
     </div>
   );
