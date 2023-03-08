@@ -5,7 +5,7 @@ function Notification() {
   const notificationElement = notificationData.map((data) => {
     return (
       <div className={styles.notification__item}>
-        <img src={data.profileImage} alt="" />
+        <img src={data.profileImage} alt="profile" />
         <div className={styles.notification__item__content}>
           <p>{data.title}</p>
           <p>{data.text}</p>
