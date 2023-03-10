@@ -1,3 +1,4 @@
+import DbCharts from "../DbCharts/DbCharts";
 import KpiCards from "../KpiCards/KpiCards";
 import styles from "./Dashboard.module.scss";
 
@@ -6,6 +7,7 @@ function Dashboard() {
     <div className={styles.dashboard}>
       <div className={styles.dashboard__container}>
         <KpiCards />
+        <DbCharts />
       </div>
     </div>
   );
