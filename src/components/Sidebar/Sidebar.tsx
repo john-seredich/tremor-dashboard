@@ -9,19 +9,6 @@ type Props = {
 };
 
 function Sidebar({ activeMenu, setActiveMenu }: Props) {
-  const calcViewportUnits = () => {
-    const vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty("--vh", vh + "px");
-  };
-
-  useEffect(() => {
-    const handleResize = () => calcViewportUnits();
-    window.addEventListener("resize", handleResize);
-
-    handleResize();
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
   const activeItem = "Dashboard";
   const dynamicStyle = `${styles.sidebar} ${activeMenu}`;
   console.log(dynamicStyle);

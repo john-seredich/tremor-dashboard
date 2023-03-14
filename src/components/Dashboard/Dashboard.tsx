@@ -7,7 +7,7 @@ function Dashboard() {
     <div className={styles.dashboard}>
       <div className={styles.dashboard__container}>
         <KpiCards />
-        <DbCharts />
+        {/* <DbCharts /> */}
       </div>
     </div>
   );
