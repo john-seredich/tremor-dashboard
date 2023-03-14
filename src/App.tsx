@@ -5,17 +5,22 @@ import Navbar from "./components/Navbar/Navbar";
 
 import styles from "./App.module.scss";
 import Dashboard from "./components/Dashboard/Dashboard";
+import NewSidebar from "./components/NewSidebar/NewSidebar";
+import NewNavbar from "./components/NewNavbar/NewNavbar";
 
 function App() {
-  const [activeMenu, setActiveMenu] = useState(false);
+  const [activeMenu, setActiveMenu] = useState(true);
 
   return (
     <div className={styles.app}>
-      <Sidebar activeMenu={activeMenu} setActiveMenu={setActiveMenu} />
-      <div className={styles.app__container}>
+      {activeMenu && <NewSidebar />}
+      <NewNavbar activeMenu={activeMenu} setActiveMenu={setActiveMenu} />
+
+      {/* <Sidebar activeMenu={activeMenu} setActiveMenu={setActiveMenu} /> */}
+      {/* <div className={styles.app__container}>
         <Navbar />
         <Dashboard />
-      </div>
+      </div> */}
     </div>
   );
 }
