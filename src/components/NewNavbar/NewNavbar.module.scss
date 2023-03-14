@@ -1,5 +1,6 @@
 .navbar {
   width: 100%;
+  max-height: 40px;
   padding: 1rem;
   background-color: white;
 
@@ -44,4 +45,10 @@
   width: 100%;
   z-index: 1;
   cursor: pointer;
+}
+
+@media screen and (min-width: 1300px) {
+  .overlay {
+    display: none;
+  }
 }
