@@ -5,12 +5,12 @@ function NewSidebar() {
   const activeMenuItem = "Dashboard";
 
   return (
-    <div className={styles.mobile_sidebar}>
+    <div className={styles.sidebar}>
       <h1>BITUMEN</h1>
-      <div className={styles.mobile_sidebar__container}>
+      <div className={styles.sidebar__container}>
         {links.map((linkCategories, i) => {
           return (
-            <div className={styles.mobile_sidebar__item} key={i}>
+            <div className={styles.sidebar__item} key={i}>
               {linkCategories.title && <h2>{linkCategories.title}</h2>}
               {linkCategories.links.map((link, i) => {
                 return (

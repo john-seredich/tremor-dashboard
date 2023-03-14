@@ -1,4 +1,4 @@
-.mobile_sidebar {
+.sidebar {
   position: fixed;
   min-width: 275px;
   height: 100%;
@@ -73,5 +73,12 @@
 
   span {
     color: white;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .sidebar {
+    position: relative;
+    height: 100vh;
   }
 }
