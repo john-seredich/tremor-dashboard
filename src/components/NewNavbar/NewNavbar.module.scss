@@ -1,0 +1,47 @@
+.navbar {
+  width: 100%;
+  padding: 1rem;
+  background-color: white;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    button {
+      font-size: 1.15rem;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__btn {
+      svg {
+        padding: 0.35rem;
+        margin: 0.05rem;
+        border-radius: 0.25rem;
+        background-color: rgb(237, 237, 237);
+        color: #262626;
+
+        &:hover {
+          background-color: rgb(217, 216, 216);
+        }
+      }
+    }
+  }
+}
+
+.overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.526);
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+  cursor: pointer;
+}
