@@ -1,19 +1,19 @@
 import { useState } from "react";
 import "@tremor/react/dist/esm/tremor.css";
 import styles from "./App.module.scss";
-import NewSidebar from "./components/Sidebar/Sidebar";
-import NewNavbar from "./components/Navbar/Navbar";
-import NewDashboard from "./components/Dashboard/Dashboard";
+import Sidebar from "./components/Sidebar/Sidebar";
+import Navbar from "./components/Navbar/Navbar";
+import Dashboard from "./components/Dashboard/Dashboard";
 
 function App() {
   const [activeMenu, setActiveMenu] = useState(true);
 
   return (
     <div className={styles.app}>
-      {activeMenu && <NewSidebar />}
+      {activeMenu && <Sidebar />}
       <div className={styles.app__container}>
-        <NewNavbar activeMenu={activeMenu} setActiveMenu={setActiveMenu} />
-        <NewDashboard />
+        <Navbar activeMenu={activeMenu} setActiveMenu={setActiveMenu} />
+        <Dashboard />
       </div>
     </div>
   );
