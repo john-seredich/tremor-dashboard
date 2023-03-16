@@ -7,6 +7,7 @@ import styles from "./App.module.scss";
 import Dashboard from "./components/Dashboard/Dashboard";
 import NewSidebar from "./components/NewSidebar/NewSidebar";
 import NewNavbar from "./components/NewNavbar/NewNavbar";
+import NewDashboard from "./components/NewDashboard/NewDashboard";
 
 function App() {
   const [activeMenu, setActiveMenu] = useState(true);
@@ -14,7 +15,10 @@ function App() {
   return (
     <div className={styles.app}>
       {activeMenu && <NewSidebar />}
-      <NewNavbar activeMenu={activeMenu} setActiveMenu={setActiveMenu} />
+      <div className={styles.app__container}>
+        <NewNavbar activeMenu={activeMenu} setActiveMenu={setActiveMenu} />
+        <NewDashboard />
+      </div>
 
       {/* <Sidebar activeMenu={activeMenu} setActiveMenu={setActiveMenu} /> */}
       {/* <div className={styles.app__container}>
