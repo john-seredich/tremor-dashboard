@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from "./NewNavbar.module.scss";
+import styles from "./Navbar.module.scss";
 import { MdNotifications } from "react-icons/md";
 import { AiFillSetting, AiOutlineMenu } from "react-icons/ai";
 import { FiMoreVertical } from "react-icons/fi";
@@ -12,7 +12,7 @@ type Props = {
   setActiveMenu: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
-function NewNavbar({ activeMenu, setActiveMenu }: Props) {
+function Navbar({ activeMenu, setActiveMenu }: Props) {
   const [notifToggle, setNotifToggle] = useState(false);
   const [themeModalToggle, setThemeModalToggle] = useState(false);
   const [dropdownToggle, setDropdownToggle] = useState(true);
@@ -82,4 +82,4 @@ function NewNavbar({ activeMenu, setActiveMenu }: Props) {
   );
 }
 
-export default NewNavbar;
+export default Navbar;

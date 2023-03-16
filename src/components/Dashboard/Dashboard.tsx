@@ -1,4 +1,4 @@
-import styles from "./NewDashboard.module.scss";
+import styles from "./Dashboard.module.scss";
 
 function NewDashboard() {
   return <div></div>;

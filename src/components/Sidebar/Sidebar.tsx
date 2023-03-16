@@ -1,7 +1,7 @@
-import styles from "./NewSidebar.module.scss";
+import styles from "./Sidebar.module.scss";
 import { links } from "../../data/links";
 
-function NewSidebar() {
+function Sidebar() {
   const activeMenuItem = "Dashboard";
 
   return (
@@ -33,4 +33,4 @@ function NewSidebar() {
   );
 }
 
-export default NewSidebar;
+export default Sidebar;

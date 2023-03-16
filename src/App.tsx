@@ -1,9 +1,9 @@
 import { useState } from "react";
 import "@tremor/react/dist/esm/tremor.css";
 import styles from "./App.module.scss";
-import NewSidebar from "./components/NewSidebar/NewSidebar";
-import NewNavbar from "./components/NewNavbar/NewNavbar";
-import NewDashboard from "./components/NewDashboard/NewDashboard";
+import NewSidebar from "./components/Sidebar/Sidebar";
+import NewNavbar from "./components/Navbar/Navbar";
+import NewDashboard from "./components/Dashboard/Dashboard";
 
 function App() {
   const [activeMenu, setActiveMenu] = useState(true);
