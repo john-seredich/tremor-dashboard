@@ -1,9 +1,9 @@
-import styles from "./Dropdown.module.scss";
+import styles from "./NavbarDropdown.module.scss";
 import { HiSearch } from "react-icons/hi";
 import { TextInput } from "@tremor/react";
 import profileImg from "../../assets/avatar.jpg";
 
-function Dropdown() {
+function NavbarDropdown() {
   return (
     <div className={styles.dropdown}>
       <div className={styles.dropdown__search}>
@@ -17,4 +17,4 @@ function Dropdown() {
   );
 }
 
-export default Dropdown;
+export default NavbarDropdown;

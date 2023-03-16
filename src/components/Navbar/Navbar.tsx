@@ -5,7 +5,7 @@ import { AiFillSetting, AiOutlineMenu } from "react-icons/ai";
 import { FiMoreVertical } from "react-icons/fi";
 import Notification from "../Notification/Notification";
 import ThemeModal from "../ThemeModal/ThemeModal";
-import Dropdown from "../Dropdown/Dropdown";
+import NavbarDropdown from "../NavbarDropdown/NavbarDropdown";
 
 type Props = {
   activeMenu: boolean;
@@ -68,7 +68,7 @@ function Navbar({ activeMenu, setActiveMenu }: Props) {
             >
               <FiMoreVertical />
             </button>
-            {dropdownToggle && <Dropdown />}
+            {dropdownToggle && <NavbarDropdown />}
           </div>
         </div>
       </div>
