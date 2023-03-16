@@ -1,0 +1,33 @@
+.themeModal {
+  top: 0;
+  right: 0;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  width: 320px;
+  height: 100%;
+  z-index: 2;
+
+  &__header {
+    padding: 1.26rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #e5e5e5;
+
+    button {
+      display: flex;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #262626;
+    }
+
+    svg {
+      font-size: 1.5rem;
+      color: #262626;
+    }
+  }
+}
