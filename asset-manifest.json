@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/tremor-dashboard/static/css/main.59912539.css",
-    "main.js": "/tremor-dashboard/static/js/main.fab2a23a.js",
+    "main.css": "/tremor-dashboard/static/css/main.163512b4.css",
+    "main.js": "/tremor-dashboard/static/js/main.80f9b60e.js",
     "static/js/787.3e4bd318.chunk.js": "/tremor-dashboard/static/js/787.3e4bd318.chunk.js",
     "static/media/avatar2.jpg": "/tremor-dashboard/static/media/avatar2.40d668f58c650e364281.jpg",
     "static/media/avatar.jpg": "/tremor-dashboard/static/media/avatar.f56b774f77caaf2f6921.jpg",
     "index.html": "/tremor-dashboard/index.html",
-    "main.59912539.css.map": "/tremor-dashboard/static/css/main.59912539.css.map",
-    "main.fab2a23a.js.map": "/tremor-dashboard/static/js/main.fab2a23a.js.map",
+    "main.163512b4.css.map": "/tremor-dashboard/static/css/main.163512b4.css.map",
+    "main.80f9b60e.js.map": "/tremor-dashboard/static/js/main.80f9b60e.js.map",
     "787.3e4bd318.chunk.js.map": "/tremor-dashboard/static/js/787.3e4bd318.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.59912539.css",
-    "static/js/main.fab2a23a.js"
+    "static/css/main.163512b4.css",
+    "static/js/main.80f9b60e.js"
   ]
 }
