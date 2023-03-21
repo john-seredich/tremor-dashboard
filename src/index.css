@@ -3,11 +3,11 @@ html {
   box-sizing: border-box;
 }
 
-*,
+/* *,
 *::before *::after {
-  margin: 0rem;
-  padding: 0rem;
-}
+  margin: 0;
+  padding: 0;
+} */
 
 body {
   margin: 0;
