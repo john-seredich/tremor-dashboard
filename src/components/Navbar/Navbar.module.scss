@@ -2,7 +2,9 @@
   // width: 100%;
   max-height: 35px;
   padding: 1rem;
-  background-color: #fafafa;
+  // background-color: #fafafa;
+  background-color: #f5f5f5;
+  border-bottom: 2px solid rgb(213, 213, 213);
 
   &__container {
     display: flex;
@@ -17,7 +19,7 @@
     }
   }
 
-  &__menu {
+  &__items {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,6 +38,17 @@
       }
     }
   }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__search {
+    display: none;
+    margin-left: 1rem;
+  }
 }
 
 .overlay {
@@ -48,6 +61,17 @@
 }
 
 @media screen and (min-width: 1300px) {
+  .navbar {
+    &__search {
+      display: block;
+    }
+
+    &__items {
+      &__extend {
+        display: none;
+      }
+    }
+  }
   .overlay {
     display: none;
   }

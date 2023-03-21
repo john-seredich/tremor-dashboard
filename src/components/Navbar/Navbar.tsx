@@ -6,6 +6,8 @@ import { FiMoreVertical } from "react-icons/fi";
 import Notification from "../Notification/Notification";
 import ThemeModal from "../ThemeModal/ThemeModal";
 import NavbarDropdown from "../NavbarDropdown/NavbarDropdown";
+import { TextInput } from "@tremor/react";
+import { HiSearch } from "react-icons/hi";
 
 type Props = {
   activeMenu: boolean;
@@ -15,7 +17,7 @@ type Props = {
 function Navbar({ activeMenu, setActiveMenu }: Props) {
   const [notifToggle, setNotifToggle] = useState(false);
   const [themeModalToggle, setThemeModalToggle] = useState(false);
-  const [dropdownToggle, setDropdownToggle] = useState(true);
+  const [dropdownToggle, setDropdownToggle] = useState(false);
 
   const handleMenuToggle = () => setActiveMenu((prevMenu) => !prevMenu);
   const handleNotifToggle = () => setNotifToggle((prevToggle) => !prevToggle);
@@ -29,19 +31,24 @@ function Navbar({ activeMenu, setActiveMenu }: Props) {
       <div className={styles.navbar}>
         <div className={styles.navbar__container}>
           {/* Menu */}
-          <button
-            className={styles.navbar__container__menubtn}
-            type="button"
-            onClick={handleMenuToggle}
-          >
-            <AiOutlineMenu />
-          </button>
-
-          {/* Notification */}
           <div className={styles.navbar__menu}>
             <button
+              className={styles.navbar__container__menubtn}
               type="button"
-              className={styles.navbar__menu__btn}
+              onClick={handleMenuToggle}
+            >
+              <AiOutlineMenu />
+            </button>
+            <div className={styles.navbar__search}>
+              <TextInput icon={HiSearch} placeholder="Search..." />
+            </div>
+          </div>
+
+          {/* Notification */}
+          <div className={styles.navbar__items}>
+            <button
+              type="button"
+              className={styles.navbar__items__btn}
               onClick={handleNotifToggle}
             >
               <MdNotifications />
@@ -51,7 +58,7 @@ function Navbar({ activeMenu, setActiveMenu }: Props) {
             {/* Settings */}
             <button
               type="button"
-              className={styles.navbar__menu__btn}
+              className={styles.navbar__items__btn}
               onClick={handleThemeModalToggle}
             >
               <AiFillSetting />
@@ -63,7 +70,7 @@ function Navbar({ activeMenu, setActiveMenu }: Props) {
             {/* Extends */}
             <button
               type="button"
-              className={styles.navbar__menu__btn}
+              className={`${styles.navbar__items__btn} ${styles.navbar__items__extend}`}
               onClick={handleDropdownToggle}
             >
               <FiMoreVertical />
