@@ -8,6 +8,7 @@ import ThemeModal from "../ThemeModal/ThemeModal";
 import NavbarDropdown from "../NavbarDropdown/NavbarDropdown";
 import { TextInput } from "@tremor/react";
 import { HiSearch } from "react-icons/hi";
+import profileImg from "../../assets/avatar.jpg";
 
 type Props = {
   activeMenu: boolean;
@@ -76,6 +77,11 @@ function Navbar({ activeMenu, setActiveMenu }: Props) {
               <FiMoreVertical />
             </button>
             {dropdownToggle && <NavbarDropdown />}
+
+            <div className={styles.profile_btn}>
+              <img src={profileImg} alt="" />
+              <p>John S.</p>
+            </div>
           </div>
         </div>
       </div>

@@ -1,8 +1,7 @@
 .navbar {
-  // width: 100%;
+  display: flex;
   max-height: 35px;
   padding: 1rem;
-  // background-color: #fafafa;
   background-color: #f5f5f5;
   border-bottom: 2px solid rgb(213, 213, 213);
 
@@ -10,6 +9,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
 
     button {
       font-size: 1.15rem;
@@ -51,6 +51,10 @@
   }
 }
 
+.profile_btn {
+  display: none;
+}
+
 .overlay {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.526);
@@ -74,5 +78,38 @@
   }
   .overlay {
     display: none;
+  }
+
+  .extend_btn {
+    display: none;
+  }
+
+  .profile_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.25rem;
+    max-height: 29.2px;
+    padding: 0.25rem 0.5rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+
+    img {
+      border-radius: 50%;
+      width: 29.6px;
+      height: 29.6px;
+    }
+
+    p {
+      margin: 0rem 0.5;
+      font-size: 0.85rem;
+      margin-left: 0.5rem;
+      font-weight: 700;
+      color: #262626;
+    }
+
+    &:hover {
+      background-color: rgb(181, 181, 181);
+    }
   }
 }
