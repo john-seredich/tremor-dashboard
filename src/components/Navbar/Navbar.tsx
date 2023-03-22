@@ -29,7 +29,7 @@ function Navbar({ activeMenu, setActiveMenu }: Props) {
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const handleAutoCloseMenus = useMemo(() => {
-    // Closed any open menu's when sidebar is active
+    // Closed any open menu's when sidebar is activ
     if (activeMenu) {
       setDropdownToggle(false);
       setNotifToggle(false);
