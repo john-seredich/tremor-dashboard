@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import styles from "./Navbar.module.scss";
 import { MdNotifications } from "react-icons/md";
 import { AiFillSetting, AiOutlineMenu } from "react-icons/ai";
@@ -27,11 +27,21 @@ function Navbar({ activeMenu, setActiveMenu }: Props) {
   const handleDropdownToggle = () =>
     setDropdownToggle((prevToggle) => !prevToggle);
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const handleAutoCloseMenus = useMemo(() => {
+    // Closed any open menu's when sidebar is active
+    if (activeMenu) {
+      setDropdownToggle(false);
+      setNotifToggle(false);
+      setThemeModalToggle(false);
+    }
+  }, [activeMenu]);
+
   return (
     <>
       <div className={styles.navbar}>
         <div className={styles.navbar__container}>
-          {/* Menu */}
+          {/* Menu Button  */}
           <div className={styles.navbar__menu}>
             <button
               className={styles.navbar__container__menubtn}
@@ -45,6 +55,7 @@ function Navbar({ activeMenu, setActiveMenu }: Props) {
             </div>
           </div>
 
+          {/* Nav Container */}
           {/* Notification */}
           <div className={styles.navbar__items}>
             <button
@@ -78,6 +89,7 @@ function Navbar({ activeMenu, setActiveMenu }: Props) {
             </button>
             {dropdownToggle && <NavbarDropdown />}
 
+            {/* Profile */}
             <div className={styles.profile_btn}>
               <img src={profileImg} alt="" />
               <p>John S.</p>

@@ -2,9 +2,9 @@ import styles from "./Notification.module.scss";
 import { notificationData } from "../../data/notifications";
 
 function Notification() {
-  const notificationElement = notificationData.map((data) => {
+  const notificationElement = notificationData.map((data, i) => {
     return (
-      <div className={styles.notification__item}>
+      <div className={styles.notification__item} key={i}>
         <img src={data.profileImage} alt="profile" />
         <div className={styles.notification__item__content}>
           <p>{data.title}</p>
