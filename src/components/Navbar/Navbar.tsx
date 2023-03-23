@@ -9,6 +9,7 @@ import NavbarDropdown from "../NavbarDropdown/NavbarDropdown";
 import { TextInput } from "@tremor/react";
 import { HiSearch } from "react-icons/hi";
 import profileImg from "../../assets/avatar.jpg";
+import ProfileDropdown from "../ProfileDropdown/ProfileDropdown";
 
 type Props = {
   activeMenu: boolean;
@@ -19,6 +20,7 @@ function Navbar({ activeMenu, setActiveMenu }: Props) {
   const [notifToggle, setNotifToggle] = useState(false);
   const [themeModalToggle, setThemeModalToggle] = useState(false);
   const [dropdownToggle, setDropdownToggle] = useState(false);
+  const [profileToggle, setProfileToggle] = useState(false);
 
   const handleMenuToggle = () => setActiveMenu((prevMenu) => !prevMenu);
   const handleNotifToggle = () => setNotifToggle((prevToggle) => !prevToggle);
@@ -26,6 +28,8 @@ function Navbar({ activeMenu, setActiveMenu }: Props) {
     setThemeModalToggle((prevToggle) => !prevToggle);
   const handleDropdownToggle = () =>
     setDropdownToggle((prevToggle) => !prevToggle);
+  const handleProfileToggle = () =>
+    setProfileToggle((prevToggle) => !prevToggle);
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const handleAutoCloseMenus = useMemo(() => {
@@ -34,6 +38,7 @@ function Navbar({ activeMenu, setActiveMenu }: Props) {
       setDropdownToggle(false);
       setNotifToggle(false);
       setThemeModalToggle(false);
+      setProfileToggle(false);
     }
   }, [activeMenu]);
 
@@ -90,10 +95,15 @@ function Navbar({ activeMenu, setActiveMenu }: Props) {
             {dropdownToggle && <NavbarDropdown />}
 
             {/* Profile */}
-            <div className={styles.profile_btn}>
+            <button
+              type="button"
+              className={styles.profile_btn}
+              onClick={handleProfileToggle}
+            >
               <img src={profileImg} alt="" />
               <p>John S.</p>
-            </div>
+            </button>
+            {profileToggle && <ProfileDropdown />}
           </div>
         </div>
       </div>
