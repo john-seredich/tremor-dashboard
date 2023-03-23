@@ -6,10 +6,15 @@ import {
   BsFillBarChartFill,
   BsPieChartFill,
   BsHouseFill,
+  BsFillChatFill,
 } from "react-icons/bs";
-import { MdPermContactCalendar } from "react-icons/md";
-import { FaFileInvoice } from "react-icons/fa";
-import { AiOutlineRise } from "react-icons/ai";
+import {
+  MdPermContactCalendar,
+  MdEmail,
+  MdOutlineLogout,
+} from "react-icons/md";
+import { FaFileInvoice, FaMoneyBill } from "react-icons/fa";
+import { AiOutlineRise, AiFillSetting } from "react-icons/ai";
 
 export const links = [
   {
@@ -73,5 +78,36 @@ export const links = [
         icon: <AiOutlineRise />,
       },
     ],
+  },
+];
+
+export const profileLinks = [
+  {
+    name: "Profile",
+    icon: <BsPersonFill />,
+  },
+  {
+    name: "Inbox",
+    icon: <MdEmail />,
+  },
+  {
+    name: "Chat",
+    icon: <BsFillChatFill />,
+  },
+  {
+    name: "Settings",
+    icon: <AiFillSetting />,
+  },
+  {
+    name: "Pricing",
+    icon: <FaMoneyBill />,
+  },
+  {
+    name: "FAQ",
+    icon: <BsQuestionCircleFill />,
+  },
+  {
+    name: "Logout",
+    icon: <MdOutlineLogout />,
   },
 ];
