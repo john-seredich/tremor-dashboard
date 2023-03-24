@@ -23,6 +23,7 @@
     margin-right: 0.5rem;
     padding: 0 1rem;
     border-radius: 0.25rem;
+    font-family: inherit;
     cursor: pointer;
 
     &:hover {
@@ -31,7 +32,7 @@
 
     p {
       margin-left: 0.5rem;
-      font-weight: 600;
+      font-weight: 700;
       font-size: 0.9rem;
       color: #262626;
     }
