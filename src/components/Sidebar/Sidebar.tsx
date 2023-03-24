@@ -6,7 +6,9 @@ function Sidebar() {
 
   return (
     <div className={styles.sidebar}>
-      <h1>BITUMEN</h1>
+      <a href="/" className={styles.sidebar__title}>
+        BITUMEN
+      </a>
       <div className={styles.sidebar__container}>
         {links.map((linkCategories, i) => {
           return (

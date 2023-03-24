@@ -7,7 +7,8 @@
   z-index: 3;
   transition: all 0.5s ease;
 
-  h1 {
+  &__title {
+    display: block;
     margin: 0rem;
     margin-bottom: 1.25rem;
     padding: 1rem 2rem;
@@ -15,6 +16,8 @@
     font-weight: 600;
     letter-spacing: 0.05rem;
     cursor: pointer;
+    color: #262626;
+    text-decoration: none;
 
     &:hover {
       color: #3b82f6;
