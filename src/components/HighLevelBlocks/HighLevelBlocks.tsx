@@ -2,7 +2,7 @@ import OverviewBlock from "./OverviewBlock/OverviewBlock";
 
 function HighLevelBlocks() {
   return (
-    <div style={{ margin: "1rem" }}>
+    <div style={{ marginTop: "1.5rem" }}>
       <OverviewBlock />
     </div>
   );

@@ -31,7 +31,7 @@ function OverviewBlock() {
   const [selectedView, setSelectedView] = useState("chart");
 
   return (
-    <div style={{ margin: "1rem" }}>
+    <div>
       <Card maxWidth="max-w-md" decoration="top" decorationColor="blue">
         <Flex
           spaceX="space-x-8"
