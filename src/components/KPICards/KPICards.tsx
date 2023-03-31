@@ -14,7 +14,7 @@ import { KPIColors } from "./KPICardsData";
 
 function KPICards() {
   return (
-    <div>
+    <div style={{ width: "100%" }}>
       <ColGrid numColsSm={2} numColsLg={4} gapX="gap-x-6" gapY="gap-y-6">
         {KPICardData.map((item) => (
           <Card
