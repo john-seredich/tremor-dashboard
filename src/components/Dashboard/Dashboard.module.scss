@@ -1,3 +1,9 @@
 .dashboard {
   margin: 1rem;
 }
+
+@media screen and (min-width: 1000px) {
+  .dashboard {
+    margin: 1rem 3rem;
+  }
+}

@@ -1,5 +1,5 @@
 import styles from "./Notification.module.scss";
-import { notificationData } from "../../data/notifications";
+import { notificationData } from "./NotficationData";
 
 function Notification() {
   const notificationElement = notificationData.map((data, i) => {

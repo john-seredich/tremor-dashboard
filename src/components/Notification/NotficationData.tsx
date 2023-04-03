@@ -1,5 +1,5 @@
-import profileImage from "../assets/avatar.jpg";
-import profileImage2 from "../assets/avatar2.jpg";
+import profileImage from "../../assets/avatar.jpg";
+import profileImage2 from "../../assets/avatar2.jpg";
 
 export const notificationData = [
   {

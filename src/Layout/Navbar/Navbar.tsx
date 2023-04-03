@@ -3,13 +3,13 @@ import styles from "./Navbar.module.scss";
 import { MdNotifications } from "react-icons/md";
 import { AiFillSetting, AiOutlineMenu } from "react-icons/ai";
 import { FiMoreVertical } from "react-icons/fi";
-import Notification from "../Notification/Notification";
-import ThemeModal from "../ThemeModal/ThemeModal";
-import NavbarDropdown from "../NavbarDropdown/NavbarDropdown";
+import Notification from "../../components/Notification/Notification";
+import ThemeModal from "../../components/ThemeModal/ThemeModal";
+import NavbarDropdown from "../../components/NavbarDropdown/NavbarDropdown";
 import { TextInput } from "@tremor/react";
 import { HiSearch } from "react-icons/hi";
 import profileImg from "../../assets/avatar.jpg";
-import ProfileDropdown from "../ProfileDropdown/ProfileDropdown";
+import ProfileDropdown from "../../components/ProfileDropdown/ProfileDropdown";
 
 type Props = {
   activeMenu: boolean;

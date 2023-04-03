@@ -1,6 +1,6 @@
 import styles from "./ProfileDropdown.module.scss";
 import profileImg from "../../assets/avatar.jpg";
-import { profileLinks } from "../../data/links";
+import { profileLinks } from "../../links";
 
 function ProfileDropdown() {
   return (

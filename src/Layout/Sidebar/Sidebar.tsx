@@ -1,5 +1,5 @@
 import styles from "./Sidebar.module.scss";
-import { links } from "../../data/links";
+import { links } from "../../links";
 
 function Sidebar() {
   const activeMenuItem = "Dashboard";
