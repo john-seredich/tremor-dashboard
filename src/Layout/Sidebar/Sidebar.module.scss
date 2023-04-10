@@ -81,7 +81,21 @@
 
 @media screen and (min-width: 1000px) {
   .sidebar {
+    position: absolute;
+    height: 100vh;
+  }
+}
+
+@media screen and (min-width: 1260px) {
+  .sidebar {
     position: relative;
     height: 100vh;
   }
 }
+
+// @media screen and (min-width: 1000px) {
+//   .sidebar {
+//     position: relative;
+//     height: 100vh;
+//   }
+// }
