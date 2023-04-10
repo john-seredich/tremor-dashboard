@@ -1,5 +1,14 @@
 .dashboard {
   margin: 1rem;
+
+  &__container {
+    width: 100%;
+    // &__middle {
+    //   display: flex;
+    //   align-items: center;
+    //   flex-wrap: wrap;
+    // }
+  }
 }
 
 @media screen and (min-width: 1000px) {
