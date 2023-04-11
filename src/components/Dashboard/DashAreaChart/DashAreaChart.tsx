@@ -8,7 +8,7 @@ function DashAreaChart() {
   return (
     <div>
       <Card decoration="top" decorationColor="blue" maxWidth="max-w-full">
-        <Title color="blue">Performance</Title>
+        <Title>Performance</Title>
         <Text>Comparison between Sales and Profit</Text>
         <AreaChart
           marginTop="mt-4"
