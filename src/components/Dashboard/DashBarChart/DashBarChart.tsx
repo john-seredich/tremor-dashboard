@@ -6,7 +6,7 @@ const valueFormatter = (number: number) =>
 
 function DashBarChart() {
   return (
-    <Card>
+    <Card decoration="top" decorationColor="blue">
       <Title>Ticket Monitoring</Title>
       <Text>Tickets by Status</Text>
       <BarChart
