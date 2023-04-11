@@ -5,6 +5,8 @@ import DashAreaChart from "./DashAreaChart/DashAreaChart";
 import DashTransaction from "./DashTransaction/DashTransaction";
 import { ColGrid } from "@tremor/react";
 import DashSocialBar from "./DashSocialBar/DashSocialBar";
+import DashBarChart from "./DashBarChart/DashBarChart";
+import DashSchedule from "./DashSchedule/DashSchedule";
 
 function Dashboard() {
   return (
@@ -23,6 +25,16 @@ function Dashboard() {
             <DashAreaChart />
             <DashTransaction />
             <DashSocialBar />
+          </ColGrid>
+          <ColGrid
+            numColsSm={1}
+            numColsMd={2}
+            numColsLg={2}
+            gapX="gap-x-4"
+            gapY="gap-y-6"
+          >
+            <DashBarChart />
+            <DashSchedule />
           </ColGrid>
         </ColGrid>
       </div>
