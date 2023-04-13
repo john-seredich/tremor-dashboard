@@ -24,7 +24,7 @@ function DashTransaction() {
             key={item.name}
             decoration="top"
             decorationColor="blue"
-            maxWidth="max-w-xl"
+            maxWidth="max-w-3xl"
             hFull={true}
           >
             <Title>Transaction Volume</Title>

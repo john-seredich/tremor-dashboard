@@ -26,7 +26,7 @@ function DashSocialBar() {
   }, [selectedCategory]);
 
   return (
-    <Card maxWidth="max-w-xl" decoration="top" decorationColor="blue">
+    <Card maxWidth="max-w-3xl" decoration="top" decorationColor="blue">
       <Flex spaceX="space-x-8">
         <Title>Sources</Title>
         <Dropdown
