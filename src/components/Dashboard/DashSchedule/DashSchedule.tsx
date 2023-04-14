@@ -60,9 +60,9 @@ function DashSchedule() {
         </button>
       </div>
       <div className={styles.dash_schedule__container}>
-        {scheduleData.map((data) => {
+        {scheduleData.map((data, i) => {
           return (
-            <div className={styles.dash_schedule__item}>
+            <div className={styles.dash_schedule__item} key={i}>
               <div className={styles.dash_schedule__item__info}>
                 <img src={data.img} alt="" />
                 <div className={styles.dash_schedule__item__date}>
