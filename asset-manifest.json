@@ -1,17 +1,22 @@
 {
   "files": {
-    "main.css": "/tremor-dashboard/static/css/main.0dcc50cc.css",
-    "main.js": "/tremor-dashboard/static/js/main.516db20d.js",
+    "main.css": "/tremor-dashboard/static/css/main.9cb58c49.css",
+    "main.js": "/tremor-dashboard/static/js/main.0b336496.js",
     "static/js/787.3e4bd318.chunk.js": "/tremor-dashboard/static/js/787.3e4bd318.chunk.js",
+    "static/media/avatar3.jpg": "/tremor-dashboard/static/media/avatar3.8e47360fb8a28e41c441.jpg",
+    "static/media/avatar6.jpg": "/tremor-dashboard/static/media/avatar6.55b5b7d5049e14fbb927.jpg",
+    "static/media/avatar5.jpg": "/tremor-dashboard/static/media/avatar5.680caa1ff6eb445ed08b.jpg",
+    "static/media/avatar4.jpg": "/tremor-dashboard/static/media/avatar4.79bbba0353104dd0c262.jpg",
+    "static/media/avatar7.jpg": "/tremor-dashboard/static/media/avatar7.88e4818c5ef99085da4f.jpg",
     "static/media/avatar2.jpg": "/tremor-dashboard/static/media/avatar2.40d668f58c650e364281.jpg",
     "static/media/avatar.jpg": "/tremor-dashboard/static/media/avatar.f56b774f77caaf2f6921.jpg",
     "index.html": "/tremor-dashboard/index.html",
-    "main.0dcc50cc.css.map": "/tremor-dashboard/static/css/main.0dcc50cc.css.map",
-    "main.516db20d.js.map": "/tremor-dashboard/static/js/main.516db20d.js.map",
+    "main.9cb58c49.css.map": "/tremor-dashboard/static/css/main.9cb58c49.css.map",
+    "main.0b336496.js.map": "/tremor-dashboard/static/js/main.0b336496.js.map",
     "787.3e4bd318.chunk.js.map": "/tremor-dashboard/static/js/787.3e4bd318.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0dcc50cc.css",
-    "static/js/main.516db20d.js"
+    "static/css/main.9cb58c49.css",
+    "static/js/main.0b336496.js"
   ]
 }
