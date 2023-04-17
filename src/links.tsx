@@ -35,7 +35,7 @@ export const links = [
         icon: <BsPeopleFill />,
       },
       {
-        name: "Contact",
+        name: "Customers",
         icon: <MdPermContactCalendar />,
       },
       {

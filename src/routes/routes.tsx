@@ -1,5 +1,6 @@
 import Container from "../Layout/Container/Container";
 import Dashboard from "../components/Dashboard/Dashboard";
+import Invoices from "./Invoices/Invoices";
 import Manage from "./Manage/Manage";
 
 export const routes = [
@@ -22,10 +23,10 @@ export const routes = [
     ),
   },
   {
-    path: "/calendar",
+    path: "/customers",
     element: (
       <Container>
-        <h1>Calendar</h1>
+        <h1>Customers</h1>
       </Container>
     ),
   },
@@ -33,7 +34,7 @@ export const routes = [
     path: "/invoices",
     element: (
       <Container>
-        <h1>Invocies</h1>
+        <Invoices />
       </Container>
     ),
   },
