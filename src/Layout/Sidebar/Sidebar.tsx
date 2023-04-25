@@ -1,5 +1,6 @@
 import styles from "./Sidebar.module.scss";
 import { links } from "../../links";
+import { Link } from "react-router-dom";
 
 function Sidebar() {
   const activeMenuItem = "Dashboard";
@@ -14,17 +15,17 @@ function Sidebar() {
           return (
             <div className={styles.sidebar__item} key={i}>
               {linkCategories.title && <h2>{linkCategories.title}</h2>}
-              {linkCategories.links.map((link, i) => {
+              {linkCategories.links.map((link) => {
                 return (
-                  <a
-                    href="/"
-                    key={i}
+                  <Link
+                    to={`/${link.route}`}
+                    key={link.name}
                     className={
                       activeMenuItem === link.name ? styles.active : ""
                     }
                   >
                     {link.icon} <span>{link.name}</span>
-                  </a>
+                  </Link>
                 );
               })}
             </div>
