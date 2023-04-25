@@ -22,7 +22,7 @@ export const links = [
     links: [
       {
         name: "Dashboard",
-        route: "",
+        route: "/",
         icon: <BsHouseFill />,
       },
     ],
@@ -33,17 +33,17 @@ export const links = [
     links: [
       {
         name: "Manage team",
-        route: "manage",
+        route: "/manage",
         icon: <BsPeopleFill />,
       },
       {
         name: "Customers",
-        route: "customers",
+        route: "/customers",
         icon: <MdPermContactCalendar />,
       },
       {
         name: "Invoices Balances",
-        route: "invoices",
+        route: "/invoices",
         icon: <FaFileInvoice />,
       },
     ],
@@ -53,17 +53,17 @@ export const links = [
     links: [
       {
         name: "Profile Form",
-        route: "profile",
+        route: "/profile",
         icon: <BsPersonFill />,
       },
       {
         name: "Caldendar",
-        route: "calendar",
+        route: "/calendar",
         icon: <BsFillCalendarFill />,
       },
       {
         name: "FAQ Page",
-        route: "faq",
+        route: "/faq",
         icon: <BsQuestionCircleFill />,
       },
     ],
@@ -73,18 +73,18 @@ export const links = [
     links: [
       {
         name: "Bar Chart",
-        route: "bar",
+        route: "/bar",
         icon: <BsFillBarChartFill />,
       },
       {
         name: "Pie Chart",
-        route: "pie",
+        route: "/pie",
         icon: <BsPieChartFill />,
       },
 
       {
         name: "Line Chart",
-        route: "line",
+        route: "/line",
         icon: <AiOutlineRise />,
       },
     ],
