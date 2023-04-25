@@ -1,9 +1,9 @@
 import styles from "./Sidebar.module.scss";
 import { links } from "../../links";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 function Sidebar() {
-  const activeMenuItem = "Dashboard";
+  const location = useLocation();
 
   return (
     <div className={styles.sidebar}>
@@ -18,10 +18,10 @@ function Sidebar() {
               {linkCategories.links.map((link) => {
                 return (
                   <Link
-                    to={`/${link.route}`}
+                    to={link.route}
                     key={link.name}
                     className={
-                      activeMenuItem === link.name ? styles.active : ""
+                      location.pathname === link.route ? styles.active : ""
                     }
                   >
                     {link.icon} <span>{link.name}</span>
