@@ -7,9 +7,9 @@ function Sidebar() {
 
   return (
     <div className={styles.sidebar}>
-      <a href="/" className={styles.sidebar__title}>
+      <Link to="/" className={styles.sidebar__title}>
         BITUMEN
-      </a>
+      </Link>
       <div className={styles.sidebar__container}>
         {links.map((linkCategories, i) => {
           return (
