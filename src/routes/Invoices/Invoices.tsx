@@ -23,7 +23,7 @@ function Invoices() {
   return (
     <div className={styles.invoices}>
       <PageHeader title="Invoices" content="Clients" />
-      <Card>
+      <Card decoration="top" decorationColor="blue">
         <Flex justifyContent="justify-start" spaceX="space-x-2">
           <Title>Purchases</Title>
           <Badge color="gray" text="8" />
