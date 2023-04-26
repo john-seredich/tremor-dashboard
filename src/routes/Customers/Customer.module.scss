@@ -1,0 +1,19 @@
+.customers {
+  margin: 1rem;
+  &__name {
+    display: flex;
+    align-items: center;
+  }
+  &__img {
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    margin-right: 0.75rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .customers {
+    margin: 1rem 3rem;
+  }
+}
