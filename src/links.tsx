@@ -48,26 +48,6 @@ export const links = [
     ],
   },
   {
-    title: "PAGES",
-    links: [
-      {
-        name: "Profile Form",
-        route: "/profile",
-        icon: <BsPersonFill />,
-      },
-      {
-        name: "Caldendar",
-        route: "/calendar",
-        icon: <BsFillCalendarFill />,
-      },
-      {
-        name: "FAQ Page",
-        route: "/faq",
-        icon: <BsQuestionCircleFill />,
-      },
-    ],
-  },
-  {
     title: "CHARTS",
     links: [
       {
