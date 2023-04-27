@@ -1,8 +1,10 @@
 import Container from "../Layout/Container/Container";
 import Dashboard from "../components/Dashboard/Dashboard";
-import BarChart from "./Bar/BarChart";
+import Area from "./Area/Area";
+import Bar from "./Bar/Bar";
 import Customers from "./Customers/Customers";
 import Invoices from "./Invoices/Invoices";
+import Line from "./Line/Line";
 import Manage from "./Manage/Manage";
 
 export const routes = [
@@ -40,11 +42,29 @@ export const routes = [
       </Container>
     ),
   },
+
+  // Charts
   {
     path: "/bar",
     element: (
       <Container>
-        <BarChart />
+        <Bar />
+      </Container>
+    ),
+  },
+  {
+    path: "/area",
+    element: (
+      <Container>
+        <Area />
+      </Container>
+    ),
+  },
+  {
+    path: "/line",
+    element: (
+      <Container>
+        <Line />
       </Container>
     ),
   },
