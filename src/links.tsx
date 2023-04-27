@@ -4,7 +4,6 @@ import {
   BsFillCalendarFill,
   BsQuestionCircleFill,
   BsFillBarChartFill,
-  BsPieChartFill,
   BsHouseFill,
   BsFillChatFill,
 } from "react-icons/bs";
@@ -13,7 +12,7 @@ import {
   MdEmail,
   MdOutlineLogout,
 } from "react-icons/md";
-import { FaFileInvoice, FaMoneyBill } from "react-icons/fa";
+import { FaFileInvoice, FaMoneyBill, FaChartArea } from "react-icons/fa";
 import { AiOutlineRise, AiFillSetting } from "react-icons/ai";
 
 export const links = [
@@ -77,9 +76,9 @@ export const links = [
         icon: <BsFillBarChartFill />,
       },
       {
-        name: "Pie Chart",
-        route: "/pie",
-        icon: <BsPieChartFill />,
+        name: "Area Chart",
+        route: "/area",
+        icon: <FaChartArea />,
       },
 
       {
