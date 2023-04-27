@@ -1,0 +1,26 @@
+.line_chart {
+  margin: 1rem;
+
+  &__header {
+    display: block;
+    // display: flex;
+    // justify-content: space-between;
+  }
+
+  &__toggle {
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .line_chart {
+    &__header {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__toggle {
+      margin-top: 0;
+    }
+  }
+}
