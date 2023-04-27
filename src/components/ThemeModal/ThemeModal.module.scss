@@ -6,6 +6,7 @@
   width: 320px;
   height: 100%;
   z-index: 2;
+  color: #262626;
 
   &__header {
     padding: 1.24rem 2rem;
@@ -30,4 +31,56 @@
       color: #262626;
     }
   }
+
+  &__options {
+    margin: 1rem 2rem;
+    color: #262626;
+
+    h3 {
+      font-weight: 600;
+    }
+
+    label {
+      margin-right: 1rem;
+    }
+  }
+
+  &__colors {
+    margin: 1rem 2rem;
+
+    h3 {
+      color: #262626;
+      font-weight: 600;
+    }
+
+    &__buttons {
+      button {
+        margin: 0.25rem;
+        width: 42px;
+        height: 42px;
+        border-radius: 100%;
+        border: none;
+
+        &:hover {
+          opacity: 0.8;
+        }
+
+        &:last-child {
+          background-color: transparent;
+          font-family: inherit;
+          width: 50%;
+          font-size: 1rem;
+          font-weight: 600;
+          margin-top: 1rem;
+          border-radius: 0.25rem;
+          color: white;
+          background-color: #3b82f6;
+        }
+      }
+    }
+  }
+}
+
+.active {
+  outline: 3px solid #262626;
 }
