@@ -1,7 +1,6 @@
 import {
   BsPeopleFill,
   BsPersonFill,
-  BsFillCalendarFill,
   BsQuestionCircleFill,
   BsFillBarChartFill,
   BsHouseFill,
