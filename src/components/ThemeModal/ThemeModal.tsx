@@ -31,7 +31,7 @@ function ThemeModal({ setThemeModalToggle }: Props) {
         <input type="radio" id="light" name="theme-options" />
         <label htmlFor="light">Light</label>
 
-        <input type="radio" id="system" name="theme-options" checked />
+        <input type="radio" id="system" name="theme-options" defaultChecked />
         <label htmlFor="system">System</label>
       </div>
 
