@@ -15,8 +15,8 @@ function ProfileDropdown() {
       <ul className={styles.profile_dropdown__links}>
         {profileLinks.map((link, i) => {
           return (
-            <li>
-              <a href="/" key={i}>
+            <li key={link.name}>
+              <a href="/">
                 {link.icon}
                 <span>{link.name}</span>
               </a>
