@@ -4,7 +4,7 @@
 Here you can find an Admin dashboard that contains bar, area, and line charts. You can manage team members, check invoices, and find customer information.
 [Live Demo](https://john-seredich.github.io/tremor-dashboard/)
 
-# Why I buildt the project this way
+# Why I built the project this way
 
 My goal was to build an Admin Dashboard that could be developed to use a database in the future.
 
